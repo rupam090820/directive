@@ -1,0 +1,59 @@
+<!-- <div class="container-fluid">
+  <header>
+    <h1 align="center">| Directive Class |</h1>
+  </header>
+  <div class="container">
+    <h2> |*ngIf Ex: |</h2>
+    <p *ngIf="show">hii rupam saha</p>
+    <h2>|*ngIf else Condition |</h2>
+    <p *ngIf="name!='' else elseBlock ">{{name}}</p>
+    <ng-template #elseBlock><p>NO Name</p></ng-template>
+
+   <h2>Difference between ng-template vs ng-container</h2>
+    <ng-container> Hi Rupam </ng-container >
+      <ng-template> Hello Swaraj</ng-template>
+      
+      <ng-container *ngIf="name!='' then ThenBlock else ElseBlock"></ng-container>
+      <ng-template #ThenBlock>{{name}}</ng-template>
+      <ng-template #ElseBlock ><p>NO NAME</p></ng-template>
+  </div>
+
+  <h2>|*ngFor Ex:|</h2>
+  <table class="table table-hover table-bordered">
+    <tr>
+    <th>Name:</th>
+    <th>Course:</th>
+    <th>Fees:</th>
+  </tr>
+  <tr *ngFor="let u of user_info ; let i=index"
+  [ngStyle]="i%2==0 ? {'background-color':'red'}:{'background-color':'green'}"
+  >
+  
+ 
+  <!-- <tr *ngFor="let u of user_info ; let i=index"
+  [ngClass]="i%2==0 ? 'a':'b'"
+  > -->
+    <!-- <td>{{u.name}}</td>
+    <td>{{u.Course}}</td>
+    <td>{{u.fees}}</td>
+  </tr>
+  </table>
+<h1>switch..............</h1>
+<div class="container" [ngSwitch]="myVar">
+  <div *ngSwitchCase="1">Var is 1</div>
+  <div *ngSwitchCase="'B'">Var is B</div>
+  <div *ngSwitchCase="'C'">Var is C</div>
+  <div *ngSwitchDefault>Var is something else</div>
+  </div>
+  
+
+  <h1>display all name</h1>
+  <p *ngFor="let abc of user_info">
+  name is:--{{abc.name}} and course is:- {{abc.Course}}
+</p> 
+</div> --> -->
+
+<div>
+  <input type="text" name="template-reference-variable" #n>
+  <button (click)="myclick(n.name)">template_reference_button</button>
+</div>
